@@ -1,355 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=1024, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <title>Making Web Content Accessible in Ten Steps or Less</title>
+    <title>Making Web Content Accessible in Ten Steps or Less</title>
 
 	<meta name="description" content="The basics of making web content accessible.">
-  <meta name="author" content="Talieisn L. Smith">
-  <meta name="viewport" content="width=1024, user-scalable=no">
+    <meta name="author" content="Talieisn L. Smith">
+    <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <!-- Required stylesheet -->
-  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+    <!-- Required stylesheet -->
+    <link rel="stylesheet" media="screen" href="core/deck.core.css">
 
-  <!-- Extension CSS files go here. Remove or add as needed. -->
-  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
-  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
-  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
-  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
-  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
-
-  <!-- Style theme. More available in /themes/style/ or create your own. -->
-  <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
-
-  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
-  <link rel="stylesheet" media="screen" href="themes/transition/fade.css">
-
-  <!-- Basic black and white print styles -->
-  <link rel="stylesheet" media="print" href="core/print.css">
-
-  <!-- Required Modernizr file -->
-  <script src="modernizr.custom.js"></script>
+    <!-- Extension CSS files go here. Remove or add as needed. -->
+    <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+    <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+    <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+    <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+    <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+    
+    <!-- Style theme. More available in /themes/style/ or create your own. -->
+    <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
+    
+    <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+    <link rel="stylesheet" media="screen" href="themes/transition/fade.css">
+    
+    <!-- Basic black and white print styles -->
+    <link rel="stylesheet" media="print" href="core/print.css">
+    
+    <!-- Required Modernizr file -->
+    <script src="modernizr.custom.js"></script>
 </head>
 <body>
   <div class="deck-container">
-
     <!-- Begin slides. Just make elements with a class of slide. -->
 
-    <section class="slide">
-		<h1>Making Web Content Accessible<br> <small><em>in 10 Steps or Less</em></small></h1>
-    </section>
+<section class="slide">
+  <h1>Making Web Content Accessible<br> <small><em>in 10 Steps or Less</em></small></h1>
+</section>
 
-    <section class="slide">
-      <h2>Formalities</h2>
-	  <ol>
-	   	<li class="slide">
-	   	  <h3>Taliesin L. Smith</h3>
-	   	  <ul>
-			  <li>Assistant to Instructional Designer <small><em>(Instructional Design Technologist)</em></small></li>
-			  <li><abbr>DELTS</abbr>, Memorial University, St. John's Newfoundland &amp; Labrador</li>
-			  <li>tlsmith@mun.ca</li>
-			  <li>GitHub: terracoda</li>
-			  <li>Presentation at: <a href="https://github.com/terracoda/presentation-a11y-oew">https://github.com/terracoda/presentation-a11y-oew</a></li>
-		  </ul></li>
-	   	<li class="slide">
-	   	  <h3>On Twitter? Tweet your Questions</h3>
-	   	  <ul>
-			  <li>Follow us at <strong>@DELTS_Teach</strong></li>
-			  <li>Follow the conference at <strong>#OEW2014</strong></li>
-			  <li>Tweet your questions at <strong>#OEW2014_accessibility</strong></li>
-		  </ul></li>
-	  </ol>  
-    </section>
+<section class="slide">
+  <h2>Formalities</h2>
+    <ol>
+      <li class="slide">
+        <h3>Taliesin L. Smith</h3>
+         <ul>
+           <li>Assistant to Instructional Designer <small><em>(Instructional Design Technologist)</em></small></li>
+           <li><abbr>DELTS</abbr>, Memorial University, St. John's Newfoundland &amp; Labrador</li>
+           <li>tlsmith@mun.ca</li>
+           <li>GitHub: terracoda</li>
+           <li>Presentation at: <a href="https://github.com/terracoda/presentation-a11y-oew">https://github.com/terracoda/presentation-a11y-oew</a></li>
+          </ul>
+      </li>
+      <li class="slide">
+        <h3>On Twitter? Tweet your Questions</h3>
+          <ul>
+            <li>Follow us at <strong>@DELTS_Teach</strong></li>
+            <li>Follow the conference at <strong>#OEW2014</strong></li>
+            <li>Tweet your questions at <strong>#OEW2014_accessibility</strong></li>
+          </ul>
+      </li>
+    </ol>  
+</section>
 
-    <section class="slide">
-      <h2>Accessibility</h2>
-	  <blockquote style="width: 40%; float: left;">
-	  	<p>involves making allowances for characteristics a person cannot readily change.</p>
-		<p><i>(Clark 2003)</i></p>
-	  </blockquote> 
-	<figure>
-		  <img src="img/istock-wheelchair-stairs-1.jpg" alt="Person in wheelchair at the bottom of large set of stairs.">		  
-	  </figure>    	
-    </section>
+<section class="slide">
+  <h2>Accessibility</h2>
+    <blockquote style="width: 40%; float: left;">
+      <p>involves making allowances for characteristics a person cannot readily change.</p>
+      <p><i>(Clark 2003)</i></p>
+    </blockquote> 
+    <figure>
+      <img src="img/istock-wheelchair-stairs-1.jpg" alt="Person in wheelchair at the bottom of large set of stairs.">		  
+    </figure>    	
+</section>
+
+<section class="slide">
+  <h2>The world is changing</h2>
+  <figure class="slide">
+    <img src="img/istock-sign-ramp-backdoor-1.jpg" style="width: 48%; float: left;" alt="">	  
+  </figure>
+  <figure class="slide">
+    <img src="img/istock-stairs-ramp-1.jpg" style="width: 48%;"alt="">
+  </figure>
+</section>
 	
-    <section class="slide">
-      <h2>The world is changing</h2>
-	  <figure class="slide">
-		  <img src="img/istock-sign-ramp-backdoor-1.jpg" style="width: 48%; float: left;" alt="">	  
-	  </figure>
-	  <figure class="slide">
-		  <img src="img/istock-stairs-ramp-1.jpg" style="width: 48%;"alt="">
-	  </figure>
-    </section>
+<section class="slide">
+  <h2>Accessibility is also evolving</h2>
+    <figure style="float: left;">
+      <img src="img/icon-intl-access-sign-1.png" alt="Sign for International Access.">
+      <figcaption>Susanne Koefoed, 1968.</figcaption>
+    </figure>
+    <figure class="slide">
+      <img src="img/icon-accessible-icon-project-1.png" alt="New Sign for International Access. A more active image.">
+      <figcaption style="text-align: center;">Sara Hendren, 2011. The Accessible Icon Project.</figcaption>
+    </figure>
+</section>
 	
-    <section class="slide">
-      <h2>Accessibility is also evolving</h2>
-	  <figure style="float: left;">
-		  <img src="img/icon-intl-access-sign-1.png" alt="Sign for International Access.">
-	  	  <figcaption>Susanne Koefoed, 1968.</figcaption>
-	  </figure>
-	  <figure class="slide">
-  	  	<img src="img/icon-accessible-icon-project-1.png" alt="New Sign for International Access. A more active image.">
-  	  	<figcaption style="text-align: center;">Sara Hendren, 2011. The Accessible Icon Project.</figcaption>
-      </figure>
-    </section>
+<section class="slide">
+  <h2>Assistive &amp; Adaptive Technologies</h2> 
+  <blockquote>
+  	<p>A range of devices and software that help people with disabilities do things that they would not otherwise be able to do.</p>
+  	<p>-</p>
+  </blockquote>
+  <figure>
+    <img src="img/at-refreshable-braille.jpg" alt="">
+    <figcaption>Refreshable Braille Device. <small><a href="http://commonswikimedia.or">Commons Wiki Media</a></small></figcaption>
+  </figure>
+  <figure class="slide">
+    <img src="img/at-kurzweil-close-up.jpg" alt="Highlighted text that Kurzweil 3000 is reading.">
+    <figcaption>Kurzweil 3000 (Text to speech software)</figcaption>
+  </figure> 
+</section>
 	
-    <section class="slide">
-		<h2>Assistive &amp; Adaptive Technologies</h2> 
-		<blockquote>
-			<p>A range of devices and software that help people with disabilities do things that they would not otherwise be able to do.</p>
-			<p>-</p>
-		</blockquote>
-  	  <figure>
-  		  <img src="img/at-refreshable-braille.jpg" alt="">
-  	  	  <figcaption>Refreshable Braille Device. <small><a href="http://commonswikimedia.or">Commons Wiki Media</a></small></figcaption>
-  	  </figure>
-  	  <figure class="slide">
-    	  	<img src="img/at-kurzweil-close-up.jpg" alt="Highlighted text that Kurzweil 3000 is reading.">
-    	  	<figcaption>Kurzweil 3000 (Text to speech software)</figcaption>
-        </figure> 
-    </section>
-	
-    <section class="slide">
-      <h2>Diverse range of Assistive Technologies</h2>
-	  <p>Often highly customized for a person's disability.</p>
-	  <p>This is where the digital realm has an advantage over the physical realm. Our medium, the digital realm, allows us to customize for small groups of people, even customize to one person.</p>  
-    </section>
-	
-    <section class="slide">
-		<h2>A lot of people</h2>
-    	<figure>
-    	  <img src="img/graphics/people-statistic.jpg" alt="">
-		  <figcaption>Roughly 20% of the population has a disability.</figcaption>
-    	</figure>
-    </section>
-	
-    <section class="slide">
- 		<h2>What kinds of stairs can web sites have?</h2>
-		<p>What are the stairs or barriers that people using <abbr>AT</abbr> run into when they visit a website?</p>
-     	<figure>
-     	  <img src="img/graphics/stairs-nonum-nowords-grey.jpg" alt="">
-     	</figure>
-     </section>
+<section class="slide">
+  <h2>Diverse range of Assistive Technologies</h2>
+  <p>Often highly customized for a person's disability.</p>
+  <p>This is where the digital realm has an advantage over the physical realm. Our medium, the digital realm, allows us to customize for small groups of people, even customize to one person.</p>  
+</section>
+   
+<section class="slide">
+  <h2>What kinds of stairs can web sites have?</h2>
+    <figure>
+      <img src="img/graphics/stairs-nonum-nowords-grey.jpg" alt="">
+    </figure>
+</section>
 	 
-     <section class="slide">
-  		<h2>Content, Media &amp; Design</h2>
-		<p>Each type of content, type of media and even a design choice can be a stair, or potential barrier, on a website.</p>
-      	<figure>
-      	  <img src="img/graphics/stairs-nonum-withwords-grey.jpg" alt="">
-      	</figure>
-      </section>
+<section class="slide">
+  <h2>Content, Media &amp; Design</h2>
+    <p>Each type of content, type of media and even a design choice can be a stair, or potential barrier, on a website.</p>
+     <figure>
+       <img src="img/graphics/stairs-nonum-withwords-grey.jpg" alt="">
+     </figure>
+</section>
 	  
-      <section class="slide">
-   		<h2>Filling in the gaps</h2>
-		<blockquote>
-		 <p><strong>Web Accessibility</strong> is the inclusive practice of making websites usable by people of all abilities and disabilities.</p>
-  	 	</blockquote>
-       	<figure>
-       	  <img src="img/graphics/stairs-composite.jpg" alt="">
-       	</figure>
-       </section>
+<section class="slide">
+  <h2>Filling in the gaps</h2> 
+  <blockquote>
+   <p><strong>Web Accessibility</strong> is the inclusive practice of making websites usable by people of all abilities and disabilities.</p>
+  </blockquote>
+  <figure>
+    <img src="img/graphics/stairs-composite.jpg" alt="">
+  </figure>
+</section>
 	   
-       <section class="slide">
-    		<h2>What it takes</h2>
-		 	
-		 	<ol class="slide">
-		 		<li class="slide"><h3>Awareness</h3></li>
-		 		<li class="slide"><h3>Skills</h3></li>
-		 		<li class="slide"><h3>Resources</h3></li>
-		 	</ol>	       
-        </section>
+<section class="slide">
+  <h2>What it takes</h2> 
+    <ol class="slide">
+      <li class="slide"><h3>Awareness</h3></li>
+      <li class="slide"><h3>Skills</h3></li>
+      <li class="slide"><h3>Resources</h3></li>
+    </ol>	       
+</section>
 		
-        <section class="slide">
-     		<h2>So we have some awareness</h2>
-         	
-			<p>Let's start making content accessible one step at time. We need to employ special techniques to build-in the blue part - to turn the stairs into a ramp.</p>
-         </section>
+<section class="slide">
+  <h2>So we have some awareness</h2>
+ 	<p>Let's start making content accessible one step at time. We need to employ special techniques to build-in the blue part - to turn the stairs into a ramp.</p>
+</section>
 		  
-	      <section class="slide">
-	  		<h2>Building the virtual ramp</h2>
-			<p>Our goal in <a href="http://www.w3.org/TR/WCAG20/"><abbr>WCAG</abbr> 2.0</a> language is to make our web content: </p>
-			<ol>
-				<li class="slide"><h3>Perceivable</h3></li>
-				<li class="slide"><h3>Operable</h3></li>
-				<li class="slide"><h3>Understandable</h3></li>
-				<li class="slide"><h3>Robust</h3></li>
-			</ol>
-				(<a href="http://www.w3.org/TR/WCAG20/"><abbr>WCAG</abbr> 2.0</a>, 2008)
-
-			<p>The <em><strong>access techniques</strong></em> that I will now describe focus on making web content accessible one media type at a time – one step at a time.</p>
-			<p>I'm intentionally not talking about exact <abbr>WCAG</abbr> success criteria – our goal is accessibility not just compliance. Each step may correspond to more than one success criteria.</p>
-			<p>A person is not going to sue you because you failed on a particular success criterion, but because he/she could not access something really important on your website (likely multiple times).</p>
-			<p>Most people who have access problems don’t sue. Most people just have a bad experience and never come back.</p>
-	    	  
-	      </section>
+<section class="slide">
+  <h2>Building the virtual ramp</h2>
+    <p>Our goal in <a href="http://www.w3.org/TR/WCAG20/"><abbr>WCAG</abbr> 2.0</a> language is to make our web content:</p>
+    <ol>
+      <li class="slide"><h3>Perceivable</h3></li>
+      <li class="slide"><h3>Operable</h3></li>
+      <li class="slide"><h3>Understandable</h3></li>
+      <li class="slide"><h3>Robust</h3></li>
+    </ol>
+    <p>(<a href="http://www.w3.org/TR/WCAG20/"><abbr>WCAG</abbr> 2.0</a>, 2008)</p>
+    
+    <p>The <em><strong>access techniques</strong></em> that I will now describe focus on making web content accessible one media type at a time – one step at a time.</p>
+    <p>I'm intentionally not talking about exact <abbr>WCAG</abbr> success criteria – our goal is accessibility not just compliance. Each step may correspond to more than one success criteria.</p>
+    <p>A person is not going to sue you because you failed on a particular success criterion, but because he/she could not access something really important on your website (likely multiple times).</p>
+    <p>Most people who have access problems don’t sue. Most people just have a bad experience and never come back.</p> 
+</section>
 		  
-	      <section class="slide">
-	   		<h2>Team effort</h2>
-			<ul>
-				<li>It&apos;s about the content – the range of media types from basic text to interactive exercises and online video.</li>
-				<li>For the next 6 slides I will focus on the content side of web content accessibility.</li>
-				<li>And how making web content accessible is a team effort.</li>
-			</ul>	
-	       </section>
+<section class="slide">
+  <h2>Team effort</h2>
+  <ul>
+  	<li>It&apos;s about the content – the range of media types from basic text to interactive exercises and online video.</li>
+  	<li>For the next 6 slides I will focus on the content side of web content accessibility.</li>
+  	<li>And how making web content accessible is a team effort.</li>
+  </ul>	
+</section>
 		   
- 		   <section class="slide">
- 				<h2>1. A solid base: good code</h2>		
- 				<ol>
- 					<li>
-						<h3><code>&lt;!DOCTYPE html&gt;</code></h3>
- 						<p>The doctype tells the browser what version of <abbr>HTML</abbr> the site is coded in.</p>
- 					</li>
-					<li>
-						<h3><code>&lt;title&gt;Unique Page Title Goes Here&lt;/title&gt;</code></h3>
- 						<p>A unique and meaningful page title.</p>
- 					</li>
-					<li>
-						<h3><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></h3>
- 						<p>You ever see a webpage with funny little symbols instead of .</p>
- 					</li>
- 				</ol>
+<section class="slide">
+  <h2>1. A solid base: good code</h2>		
+  <ol>
+    <li>
+    	<h3><code>&lt;!DOCTYPE html&gt;</code></h3>
+    	<p>The doctype tells the browser what version of <abbr>HTML</abbr> the site is coded in.</p>
+    </li>
+    <li>
+    	<h3><code>&lt;title&gt;Unique Page Title Goes Here&lt;/title&gt;</code></h3>
+    	<p>A unique and meaningful page title.</p>
+    </li>
+    <li>
+    	<h3><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></h3>
+    	<p>You ever see a webpage with funny little symbols instead of .</p>
+    </li>
+  </ol>
+  
+  <p><a href="#">{demo}</a></p>
+  
+  <figure style="float: right;">
+    <img src="img/graphics/individual-stairs-step1.jpg" alt="">
+  </figure>
+ </section>
 			
- 		    	<p><a href="#">{demo}</a></p>
+<section class="slide">
+  <h2>2. Text</h2>
+    <p>Accessible by nature, but fully accessible text-based content needs:</p>		
+    <ol style="width: 80%;">
+      <li>
+	    <h3>A declared human language.</h3>
+    	  <p><code>&lt;html lang=&quot;en&quot;&gt;</code> The browser needs to know what language the content is written in, and it needs to made aware of language changes, for example <code>&lt;q lang=&quot;fr&quot;&gt;Bonjour!&lt;/q&gt;</code></p>
+	  </li>
+	  <li><h3>Semantic content hierarchy</h3>
+	  	<p>sections, headings and marked divisions.</p></li>		
+	  <li><h3>Semantic content structure</h3>
+	  	 <p>headings, paragraphs, lists, quotations, etc.</p> 
+	  </li>	
+    </ol>
+    <p><a href="#">{demo}</a></p>
+    <figure style="float: right;">
+      <img src="img/graphics/individual-stairs-step1.jpg" alt="">
+    </figure>
+</section>
 			
-  		    	<figure style="float: right;">
- 		    	  <img src="img/graphics/individual-stairs-step1.jpg" alt="">
- 		    	</figure>
- 		    </section>
-			
- 		   <section class="slide">
- 				<h2>2. Text</h2>
- 				<p>Accessible by nature, but fully accessible text-based content needs:</p>		
- 				<ol style="width: 80%;">
-					<li><h3> A declared human language.</h3>
- 						<p><code>&lt;html lang=&quot;en&quot;&gt;</code>The browser needs to know what language the content is written in, and it needs to made aware of language changes, for example <code>&lt;q lang=&quot;fr&quot;&gt;Bonjour!&lt;/q&gt;</code></p>
-					</li>
-					<li><h3>Semantic content hierarchy</h3>
-						sections, headings and marked divisions.</li>
-						
-					<li><h3>Semantic content structure</h3>
-						 headings, paragraphs, lists, quotations, etc. 
-					 </li>	
- 				</ol>
-			     <p><a href="#">{demo}</a></p>
- 		    	<figure style="float: right;">
- 		    	  <img src="img/graphics/individual-stairs-step1.jpg" alt="">
- 		    	</figure>
- 		    </section>
-			
-  		   <section class="slide">
-  				<h2>Links &amp; Navigation</h2>
-  				<p>The stepping stones of the internet:</p>		
-  				<ol style="width: 80%;">
- 					<li><h3>Well-planned, consistent navigation</h3>
- 						Absolutely essential for making your way around.				
- 					</li>
- 					<li><h3>Meaningful Links</h3>
-					    Unique, meaningful words that indicate the function of the link.
- 					</li>
-  				</ol>
-				<p><a href="#">{demo}</a></p>
-			
-  		    	<figure style="float: right;">
-  		    	  <img src="img/graphics/individual-stairs-step2.jpg" alt="">
-  		    	</figure>
-  		    </section>
-			
-   		   <section class="slide">
-   				<h2>Images &amp; Charts</h2>
-   				<p></p>		
-   				<ol>
-  					<li><h3>Captions &amp; Text Alternatives</h3>
-  						meaningful text alternatives for all content images.				
-  					</li>
-  					<li><h3>More complex images</h3>
-						may need extra description or supplementary content. Main goal is to maintain the meaning of the document.			   
-  					</li>
-   				</ol>
-			
-   		    	<figure>
-   		    	  <img src="img/graphics/individual-stairs-step3.jpg" alt="">
-   		    	</figure>
-   		    </section>
-    		   <section class="slide">
-    				<h2>Colour &amp; Layout</h2>
-					<p>We need to choose colours wisely to avoid easily confused colours.</p>
-						<ul>
-						  <li>Don't rely on color alone for meaning.</li>
-						  <li>Test for sufficient contrast.</li>
-						  <li>Use CSS for design and layout – not tables.</li>
-						  <li>We need to build some awareness around common color issues caused by different kinds of colour blindness.</li>
-						  <li>We need to use icons or other formatting – not just color – to communicate important things such as links or errors messages.</li>
-						</ul>
-						
-    		    	<figure>
-    		    	  <img src="img/graphics/individual-stairs-step4.jpg" alt="">
-    		    	</figure>
-    		    </section>
-				
-     		   <section class="slide">
-     				<h2>Tables &amp;Forms</h2>
-					<p>Keep it simple</p>
-					<ul><li>Is this truly tabular data? Is it easy to read?</li>
-						<li>Do we need that bit of user data?  </li>
-						<li>Forms &amp; tables have a rich set of mark-up to make them accessible.</li>
-						<li>Tables need a captions. Form controls need labels.</li>
-					</ul>
-					<p>Forms &amp; complex data tables have often been the basis for lawsuits.</p>
-					
-					<p>Australian Olympics results table.</p>
-					<p>Canadian job application process.</p>
+<section class="slide">
+  <h2>Links &amp; Navigation</h2>
+    <p>The stepping stones of the internet:</p>		
+    <ol style="width: 80%;">
+      <li><h3>Well-planned, consistent navigation</h3>
+          <p>Absolutely essential for making your way around.</p>				
+      </li>
+      <li><h3>Meaningful Links</h3>
+          <p>Unique, meaningful words that indicate the function of the link.</p>
+      </li>
+    </ol>
+    <p><a href="#">{demo}</a></p>
+    
+    <figure style="float: right;">
+      <img src="img/graphics/individual-stairs-step2.jpg" alt="">
+    </figure>
+ </section>
+ 
+<section class="slide">
+  <h2>Images &amp; Charts</h2>	
+  <ol>
+  	<li><h3>Captions &amp; Text Alternatives</h3>
+  		<p>meaningful text alternatives for all content images.</p>				
+  	</li>
+  	<li><h3>More complex images</h3>
+  		<p>may need extra description or supplementary content. Main goal is to maintain the meaning of the document.</p>			   
+  	</li>
+  </ol>
+  
+  <figure>
+    <img src="img/graphics/individual-stairs-step3.jpg" alt="">
+  </figure>
+ </section>
 
-     		    	<figure>
-     		    	  <img src="img/graphics/individual-stairs-step5.jpg" alt="">
-     		    	</figure>
-     		    </section>
+<section class="slide">
+  <h2>Colour &amp; Layout</h2>
+  <p>We need to choose colours wisely to avoid easily confused colours.</p>
+  	<ul>
+  	  <li>Don't rely on color alone for meaning.</li>
+  	  <li>Test for sufficient contrast.</li>
+  	  <li>Use CSS for design and layout – not tables.</li>
+  	  <li>We need to build some awareness around common color issues caused by different kinds of colour blindness.</li>
+  	  <li>We need to use icons or other formatting – not just color – to communicate important things such as links or errors messages.</li>
+  	</ul>
+  	
+  <figure>
+    <img src="img/graphics/individual-stairs-step4.jpg" alt="">
+  </figure>
+ </section>
 				
-      		   <section class="slide">
-      				<h2>Video/ audio/ multimedia/ pdf</h2>
-					<p>Like images video &amp; audio need text alternatives to be made accessible. This can be achieved through:</p>
-
-					<ol>
-						<li>Accessible Transcripts</li>
-						<li>Captions</li>
-						<li>Audio description </li>
-						<li>(aka video description)</li>
-					</ol>
-					<ul>
-					<li>Audio description (and captions) – synthetic: <a href="http://www.youtube.com/watch?v=rx2Elu7Ik3Y">http://www.youtube.com/watch?v=rx2Elu7Ik3Y</a></li>
-					
-										<li>Audio description – human voice:
-										<a href="http://www.youtube.com/watch?v=qsYMhHctB0s">http://www.youtube.com/watch?v=qsYMhHctB0s</a></li>
-										</ul>
-					
- 					
-
-      		    	<figure>
-      		    	  <img src="img/graphics/individual-stairs-step6.jpg" alt="">
-      		    	</figure>
-      		    </section>
+<section class="slide">
+  <h2>Tables &amp;Forms</h2>
+    <p>Keep it simple</p>
+    <ul><li>Is this truly tabular data? Is it easy to read?</li>
+    	<li>Do we need that bit of user data?  </li>
+    	<li>Forms &amp; tables have a rich set of mark-up to make them accessible.</li>
+    	<li>Tables need a captions. Form controls need labels.</li>
+    </ul>
+    <p>Forms &amp; complex data tables have often been the basis for lawsuits.</p>
+    
+    <p>Australian Olympics results table.</p>
+    <p>Canadian job application process.</p>
+    
+    <figure>
+      <img src="img/graphics/individual-stairs-step5.jpg" alt="">
+    </figure>
+</section>
 				
-		        <section class="slide">
-				<h2>Accessibility as a design tool</h2>
-		         	
-					<blockquote>
-						<p>[...] organizations need to look at accessibility as a design tool and not simply as list of requirements with which they must comply. [...]</p>
-						<p>Accessibility is a journey, not a destination.</p>
-						<p><em>-Derek Featherstone, 2013</em></p> 
-				</blockquote>
-				<blockquote>
-					<p>Accessibility is a journey, not a destination.</p>
-					<p><em>-Derek Featherstone, 2013</em></p> 
-				</blockquote>
-  		
-         	<figure>
-         	  <img src="img/graphics/stairs-composite.jpg" alt="">
-         	</figure>
-			
-		         </section>
-	
+<section class="slide">
+  <h2>Video/ audio/ multimedia/ pdf</h2>
+    <p>Like images video &amp; audio need text alternatives to be made accessible. This can be achieved through:</p>
+    <ol>
+      <li>Accessible Transcripts</li>
+      <li>Captions</li>
+      <li>Audio description </li>
+      <li>(aka video description)</li>
+    </ol>
+    <ul>
+      <li>Audio description (and captions) – synthetic: <a href="http://www.youtube.com/watch?v=rx2Elu7Ik3Y">http://www.youtube.com/watch?v=rx2Elu7Ik3Y</a></li>   
+      <li>Audio description – human voice:
+    <a href="http://www.youtube.com/watch?v=qsYMhHctB0s">http://www.youtube.com/watch?v=qsYMhHctB0s</a></li>
+    </ul>
+    
+	<figure>
+      <img src="img/graphics/individual-stairs-step6.jpg" alt="">
+    </figure>
+ </section>
+				
+<section class="slide">
+  <h2>Accessibility as a design tool</h2>    	
+  	<blockquote>
+  		<p>[...] organizations need to look at accessibility as a design tool and not simply as list of requirements with which they must comply. [...]</p>
+  		<p>Accessibility is a journey, not a destination.</p>
+  		<p><em>-Derek Featherstone, 2013</em></p> 
+  </blockquote>
+  <blockquote>
+  	<p>Accessibility is a journey, not a destination.</p>
+  	<p><em>-Derek Featherstone, 2013</em></p> 
+  </blockquote>
+  
+  <figure>
+    <img src="img/graphics/stairs-composite.jpg" alt="">
+  </figure>
+</section>
+		
+<section class="slide">
+  <h2>A few benefits of taking these steps</h2>
+	<ol>
+      <li><figure>
+      <img src="img/graphics/people-statistic.jpg" alt="">
+      <figcaption>Roughly 20% of the population has a disability.</figcaption>
+    </figure>
+</section>
+
 	<!-- Sample Slides -->
 	<!--
    <section class="slide">
