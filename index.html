@@ -22,9 +22,11 @@
     
     <!-- Style theme. More available in /themes/style/ or create your own. -->
     <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
+	<link rel="stylesheet" media="screen" href="custom/custom.css">
     
     <!-- Transition theme. More available in /themes/transition/ or create your own. -->
     <link rel="stylesheet" media="screen" href="themes/transition/fade.css">
+
     
     <!-- Basic black and white print styles -->
     <link rel="stylesheet" media="print" href="core/print.css">
@@ -172,7 +174,7 @@
     <p>The <em><strong>access techniques</strong></em> that I will now describe focus on making web content accessible one media type at a time – one step at a time.</p>
     <p>I'm intentionally not talking about exact <abbr>WCAG</abbr> success criteria – our goal is accessibility not just compliance. Each step may correspond to more than one success criteria.</p>
     <p>A person is not going to sue you because you failed on a particular success criterion, but because he/she could not access something really important on your website (likely multiple times).</p>
-    <p>Most people who have access problems don’t sue. Most people just have a bad experience and never come back.</p> 
+    <p>Most people who have access problems don&apos;t sue. Most people just have a bad experience and never come back.</p> 
 </section>
 		  
 <section class="slide">
@@ -183,163 +185,263 @@
   	<li>And how making web content accessible is a team effort.</li>
   </ul>	
 </section>
-		   
+
+<!-- Steps/Ramp Explanations start here. -->   	   
 <section class="slide">
-  <h2>1. A solid base: good code</h2>		
-  <ol>
-    <li>
-    	<h3><code>&lt;!DOCTYPE html&gt;</code></h3>
-    	<p>The doctype tells the browser what version of <abbr>HTML</abbr> the site is coded in.</p>
-    </li>
-    <li>
-    	<h3><code>&lt;title&gt;Unique Page Title Goes Here&lt;/title&gt;</code></h3>
-    	<p>A unique and meaningful page title.</p>
-    </li>
-    <li>
-    	<h3><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></h3>
-    	<p>You ever see a webpage with funny little symbols instead of .</p>
-    </li>
-  </ol>
-  
-  <p><a href="#">{demo}</a></p>
-  
-  <figure style="float: right;">
-    <img src="img/graphics/individual-stairs-step1.jpg" alt="">
-  </figure>
+  <h2>1. A solid base: good code</h2>
+  <div class="step"id="step1">
+	<p>Three essential things are needed for a solid (valid) code base.</p>
+    <ol>
+      <li>
+      	<h3>Document Type</h3>
+		  <p><code>&lt;!DOCTYPE html&gt;</code></p>
+      	  <p class="speaker-note">The <em>doctype</em> tells the validator &amp; the browser what version of <abbr>HTML</abbr> the site is coded in.</p>
+      </li>
+      <li>
+      	<h3>A Page Title</h3>
+		  <p><code>&lt;title&gt;Unique Page Title Goes Here&lt;/title&gt;</code></p>
+      	  <p class="speaker-note">A unique and meaningful page title tells users where they are. The title element is required.</p>
+      </li>
+      <li>
+      	<h3>Character Encoding</h3>
+		  <p><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></p>
+      	  <p class="speaker-note">If you have ever seen a web page with funny little symbols instead of letters and punctuation, it was likely having an encoding problem.</p>
+      </li>
+    </ol>
+    <p><a href="#">{demo}</a></p>
+ </div>
  </section>
 			
 <section class="slide">
-  <h2>2. Text</h2>
-    <p>Accessible by nature, but fully accessible text-based content needs:</p>		
-    <ol style="width: 80%;">
+  <h2>2. Text: accessible by nature</h2>
+    <div class="step"id="step2">		
+    <ol>
       <li>
-	    <h3>A declared human language.</h3>
-    	  <p><code>&lt;html lang=&quot;en&quot;&gt;</code> The browser needs to know what language the content is written in, and it needs to made aware of language changes, for example <code>&lt;q lang=&quot;fr&quot;&gt;Bonjour!&lt;/q&gt;</code></p>
+	    <h3>Declare the language</h3>
+		  <p class="speaker-note">The browser needs to know what language the content is written in, and it needs to made aware of language changes.</p>
+		  <p><code>&lt;html lang=&quot;en&quot;&gt;</code></p>
+		  <p><code>&lt;q lang=&quot;fr&quot;&gt;Bonjour!&lt;/q&gt;</code></p>
 	  </li>
-	  <li><h3>Semantic content hierarchy</h3>
-	  	<p>sections, headings and marked divisions.</p></li>		
-	  <li><h3>Semantic content structure</h3>
-	  	 <p>headings, paragraphs, lists, quotations, etc.</p> 
-	  </li>	
+	  <li>
+	    <h3>Logical &amp; Meaningful Structure</h3>
+	  	  <p class="speaker-note">Headings, paragraphs, lists, quotations, emphasis, etc.</p>
+	  </li>		
+	  <li>
+		<h3>Natural linear order</h3>
+	  	 <p class="speaker-note">With style and scripts turned off, a user should be able to read the content from top to bottom (depending the language, of course).</p> 
+	  </li>
+	  <li>
+		<h3>Reading Level</h3>
+	  	 <p>Keep it as simple as possible.</p> 
+	  </li>
     </ol>
     <p><a href="#">{demo}</a></p>
-    <figure style="float: right;">
-      <img src="img/graphics/individual-stairs-step1.jpg" alt="">
-    </figure>
+    </div>
 </section>
 			
 <section class="slide">
-  <h2>Links &amp; Navigation</h2>
-    <p>The stepping stones of the internet:</p>		
-    <ol style="width: 80%;">
-      <li><h3>Well-planned, consistent navigation</h3>
-          <p>Absolutely essential for making your way around.</p>				
+  <h2>3. Links &amp; Navigation</h2>
+    <div class="step"id="step3">
+	<p>The stepping stones of the internet. Well-planned, consistent navigation benefits all users.</p>		
+    <ol>
+      <li><h3>Skip to Content links</h3>
+          <p  class="speaker-note">Special links (often hidden) that provide a direct route to the main sections or landmarks.</p>
+		  <p class="speaker-note"><abbr>HTML5</abbr> has a robust set of new landmark tags.</p>
       </li>
-      <li><h3>Meaningful Links</h3>
-          <p>Unique, meaningful words that indicate the function of the link.</p>
+	  <li><h3>Consistent navigation</h3>
+          <p  class="speaker-note">Users love consistency <span class="speaker-note">as it usually makes things easier to use.</span></p>
+      </li>
+      <li><h3>Unique links &amp; Meaningful words</h3>
+          <ul>			
+			<li><abbr>DRY</abbr> principle<span class="speaker-note">: Do not repeat links to the same place over and over.</span></li>
+			<li>Clear function<span class="speaker-note">: Indicate the function of the link and avoid generic <em>Read more</em> statements.</span></li>
+			<li>User control<span class="speaker-note">: Leave context changes in the control of the user (ie no forced new tabs).</span></li>
+		  </ul>
       </li>
     </ol>
     <p><a href="#">{demo}</a></p>
-    
-    <figure style="float: right;">
-      <img src="img/graphics/individual-stairs-step2.jpg" alt="">
-    </figure>
+    </div>
  </section>
  
 <section class="slide">
-  <h2>Images &amp; Charts</h2>	
-  <ol>
-  	<li><h3>Captions &amp; Text Alternatives</h3>
-  		<p>meaningful text alternatives for all content images.</p>				
-  	</li>
-  	<li><h3>More complex images</h3>
-  		<p>may need extra description or supplementary content. Main goal is to maintain the meaning of the document.</p>			   
-  	</li>
-  </ol>
-  
-  <figure>
-    <img src="img/graphics/individual-stairs-step3.jpg" alt="">
-  </figure>
- </section>
+  <h2>4. Images &amp; Charts</h2>
+  <div class="step" id="step4">
+	<p>A text-based alternative to all meaningful visual content is required.</p>  
+    <ol>
+      <li><h3>Short descriptions</h3>
+		<p><code>&lt;img src=&quot;image-file.jpg&quot; alt=&quot;Description.&quot; &gt;</code></p>
+		<p class="speaker-note">Short descriptions can go in:</p>
+			<ul>
+				<li>alt attribute <span class="speaker-note">(hidden to visual user)</span></li>
+				<li>caption <span class="speaker-note">(figcaption in html5)</span></li>
+				<li>content <span class="speaker-note">(visible to everyone)</span></li>
+			</ul>
+      </li>
+      <li><h3>Complex images</h3>
+  		  <p class="speaker-note">May need longer descriptions than is appropriate for the alt attribute.</p>
+      	  <ul>
+		  	<li>Link to a supplementary description.</li>
+ 		  	<li>Maintain the meaning of the document.</li>
+		  </ul>
+      </li>
+    </ol>
+    <p><a href="#">{demo}</a></p>
+  </div> 
+</section>
 
 <section class="slide">
-  <h2>Colour &amp; Layout</h2>
-  <p>We need to choose colours wisely to avoid easily confused colours.</p>
-  	<ul>
-  	  <li>Don't rely on color alone for meaning.</li>
-  	  <li>Test for sufficient contrast.</li>
-  	  <li>Use CSS for design and layout – not tables.</li>
-  	  <li>We need to build some awareness around common color issues caused by different kinds of colour blindness.</li>
-  	  <li>We need to use icons or other formatting – not just color – to communicate important things such as links or errors messages.</li>
-  	</ul>
-  	
-  <figure>
-    <img src="img/graphics/individual-stairs-step4.jpg" alt="">
-  </figure>
+  <h2>5. Tables</h2>
+    <div class="step" id="step5">
+      <p>Use the rich set of semantic table mark-up that is available.</p>
+      <ol>
+		<li><h3><abbr>KISS</abbr> principle</h3>
+			<p class="speaker-note">Simple tables benefit all users.</p>
+	    </li>
+        <li><h3>Caption your tables</h3>
+			<code>&lt;caption&gt;Introduce the table here.&lt;/caption&gt;</code>
+			<p class="speaker-note">Table captions are associated directly with the table and give a visually impaired user a brief description of the data and the layout.</p>
+	    </li>       
+		<li><h3>Scope out direction</h3> 
+			<code>&lt;th scope=&quot;row&quot;&gt;Describe the table here.&lt;/th&gt;</code>
+			<p class="speaker-note">Use the scope attribute to give the row or column content direction.</p>
+		</li> 
+        <li><h3>Tabular data only</h3>
+	        <p>Use <abbr>CSS</abbr> for layout.</p>
+		</li>
+      </ol>
+      <p><a href="#">{demo}</a></p>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>6. Design Choices</h2>
+    <div class="step" id="step6"> 
+	<p>Accessible design goals need to start at the beginning of project.</p>
+    <ol>
+	  <li><h3>Use <abbr>CSS</abbr> for Layout</h3>
+	    <p class="speaker-note">Using <abbr>CSS</abbr> &amp; <abbr>HTML</abbr> together properly gives you the biggest bang in making your content accessible.</p>
+	  </li>
+      <li><h3>Choose Colours Wisely</h3>
+      	<ul>
+          <li><h4>Don't rely on colour alone for meaning.</h4>
+      	     <p class="speaker-note">Use other formatting or icons to communicate important things such as links, state changes and messages.</p>
+      	  </li>
+          <li>Test for <strong>sufficient contrast</strong>. Have a minimum standard in place to guide designers.</li>
+		  <li>Build awareness and avoid <strong>colour confusion</strong>. Try the <a href="http://colorbrewer2.org/">Brewer palette</a>. The <abbr>WCAG</abbr> Samurai have advice on using <a href="http://www.wcagsamurai.org/erratas/brewer/">Brewer colour combinations</a>.</p>
+			<p class="speaker-note">.</p>
+      	  </li>
+        </ul>	
+      </li>
+    </ol>
+	<p><a href="#">{demo}</a></p> 
+   </div>
  </section>
 				
 <section class="slide">
-  <h2>Tables &amp;Forms</h2>
-    <p>Keep it simple</p>
-    <ul><li>Is this truly tabular data? Is it easy to read?</li>
-    	<li>Do we need that bit of user data?  </li>
-    	<li>Forms &amp; tables have a rich set of mark-up to make them accessible.</li>
-    	<li>Tables need a captions. Form controls need labels.</li>
-    </ul>
-    <p>Forms &amp; complex data tables have often been the basis for lawsuits.</p>
-    
-    <p>Australian Olympics results table.</p>
-    <p>Canadian job application process.</p>
-    
-    <figure>
-      <img src="img/graphics/individual-stairs-step5.jpg" alt="">
-    </figure>
+  <h2>7. Forms are complex by nature</h2>
+    <div class="step" id="step7"><p>Keep things simple. Don&apos;t ask for data you don't need.</p>
+    <ol>
+		<li>Use &amp; associate a <code>label</code> for every form <code>control</code>.</li>
+    	<li>Group form controls to create clarity: <code>legend</code>, <code>fieldset</code>, <code>optgroup</code>.  <span class="speaker-note">Use the rich set of tags for creating meaning in forms is good for all users.</li>
+    </ol>
+    <p><strong>Note:</strong> Forms &amp; complex data tables have often been the basis for lawsuits.</p>   
+    <ul>
+		<li><a href="https://www.humanrights.gov.au/bruce-lindsay-maguire-v-sydney-organising-committee-olympic-games">Maguire v. Sidney Organizing Committee for the Olympic Games</a> (<abbr>SOCOG</abbr>) - results table.</li>
+    	<li><a href="http://canlii.org/en/ca/fca/doc/2012/2012fca161/2012fca161.html">Canada v. Jodhan</a> - job application form.</li>
+	</ul>
+	
+	<p><a href="#">{demo}</a></p></div>    
 </section>
 				
 <section class="slide">
-  <h2>Video/ audio/ multimedia/ pdf</h2>
-    <p>Like images video &amp; audio need text alternatives to be made accessible. This can be achieved through:</p>
-    <ol>
-      <li>Accessible Transcripts</li>
-      <li>Captions</li>
-      <li>Audio description </li>
-      <li>(aka video description)</li>
+  <h2>8. Video &amp; Audio</h2>
+    <div class="step" id="step8">
+	<ol>
+	  <li>No auto play.</li>
+	  <li><p>Like images, video &amp; audio need text alternatives to be made accessible. This can be achieved through:</p>
+          <ul>
+            <li>Accessible Transcripts <a href="#">{demo}</a></li>
+            <li>Captions (closed or open)</li>
+            <li>Audio description (aka video description)</li>
+			<li>Subtitles for language accessibility</li>
+          </ul>
+	  </li>
     </ol>
+	<h3>AccessForEveryone on YouTube</h3>
+	<h3>Sample audio description</h3>
     <ul>
-      <li>Audio description (and captions) – synthetic: <a href="http://www.youtube.com/watch?v=rx2Elu7Ik3Y">http://www.youtube.com/watch?v=rx2Elu7Ik3Y</a></li>   
-      <li>Audio description – human voice:
-    <a href="http://www.youtube.com/watch?v=qsYMhHctB0s">http://www.youtube.com/watch?v=qsYMhHctB0s</a></li>
+      <li><a href="http://www.youtube.com/watch?v=rx2Elu7Ik3Y">And Griffith Show</a> - captions &amp; synthetic speech</li>   
+      <li><a href="http://www.youtube.com/watch?v=qsYMhHctB0s">And Griffith Show</a> - human voice</li>
     </ul>
-    
-	<figure>
-      <img src="img/graphics/individual-stairs-step6.jpg" alt="">
-    </figure>
+       
+   </div> 
  </section>
-				
 <section class="slide">
-  <h2>Accessibility as a design tool</h2>    	
-  	<blockquote>
+  <h2>9. Multimedia</h2>
+    <div class="step" id="step9">
+    <ol>
+      <li>Follow web standards</li>
+      <li>Graceful degradation</li>
+    </ol>
+   </div>
+   <div class="step" id="step10">
+	<h2>10. PDF</h2>
+    <ul>
+      <li>Can it be converted?</li>
+  	  <li>PDF has its own standard.</li>
+      <li>Must be tagged to accessible.</li>
+    </ul>    
+   </div>
+ </section>
+<!--
+<section class="slide">
+  <h2>8. Sample Video Description</h2>
+    <h3>Captions &amp; Synthetic voice</h3>
+	<div><iframe width="420" height="315" src="http://www.youtube.com/embed/rx2Elu7Ik3Y" frameborder="0" allowfullscreen></iframe> </div>   
+</section>
+<section class="slide">
+  <h2>8. Sample Audio Description</h2>
+    <h3>Human voice</h3>
+	<div><iframe width="420" height="315" src="http://www.youtube.com/embed/qsYMhHctB0s" frameborder="0" allowfullscreen></iframe> </div>
+ </section>
+-->				
+<section class="slide">
+  <h2><q>Accessibility as a design tool</q></h2>   	
+  <blockquote class="panel-right">
   		<p>[...] organizations need to look at accessibility as a design tool and not simply as list of requirements with which they must comply. [...]</p>
-  		<p>Accessibility is a journey, not a destination.</p>
-  		<p><em>-Derek Featherstone, 2013</em></p> 
-  </blockquote>
-  <blockquote>
-  	<p>Accessibility is a journey, not a destination.</p>
-  	<p><em>-Derek Featherstone, 2013</em></p> 
-  </blockquote>
-  
+  		<p><small><em>-Derek Featherstone, 2013</em></small></p> 
+  </blockquote> 
+</section>
+
+<section class="slide">
+  <h2><q>[It's] is a journey, not a destination.</q></h2>  	
   <figure>
     <img src="img/graphics/stairs-composite.jpg" alt="">
   </figure>
-</section>
-		
+</section>   	
 <section class="slide">
-  <h2>A few benefits of taking these steps</h2>
-	<ol>
-      <li><figure>
+  <h2>Benefits</h2>
+	<p>Reach potentially 20% more people.</p>
+	<figure>
       <img src="img/graphics/people-statistic.jpg" alt="">
-      <figcaption>Roughly 20% of the population has a disability.</figcaption>
     </figure>
+</section>
+<section class="slide">
+  <h2>Special Thanks</h2>
+  <ul>
+  	<li>A very special thanks to Andrea Quigley for the lovely new graphics.</li>
+  	<li>Anne Marie Pick-up &amp; Nancy Beaton for helping with questions.</li>
+  </ul>
+  <h2>Resources</h2>
+    <ul>
+    	<li>Clark, Joe. (2003) <em>Building accessible websites.</em> Indianapolis: New Riders.</li>
+    	<li>Accessible Icon Project: <a href="http://www.accessibleicon.org/">http://www.accessibleicon.org/</a></li>
+    	<li><abb>W3C</abb>: <a href="http://www.w3.org/">http://www.w3.org/</a></li>
+    	<li><abbr>WAI</abbr>: <a href="http://www.w3.org/WAI/">http://www.w3.org/WAI/</a></li>
+    	<li>Wave Accessibility Evaluation Tool: <a href="http://wave.webaim.org">http://wave.webaim.org/</a></li>
+    	<li><abbr>WebAIM</abbr>: <a href="http://webaim.org/">http://webaim.org/</a></li>
+    	<li>Wikipedia: <a href="http://wikipedia.org/">http://wikipedia.org/</a></li>
+    </ul>
 </section>
 
 	<!-- Sample Slides -->
@@ -386,6 +488,18 @@
   	  			<li>list</li>
 				<li>list</li>
   	  		</ul>  
+    </section>
+	<section class="slide">
+	  <h2>00 Step Slide Heading</h2>
+	    <div class="step" id="0">
+	      <p>Intro text.</p>
+  	      <ol>
+  	        <li>list</li>
+  	        <li>list</li>
+	        <li>list</li>
+  	      </ol>
+ 	      <p><a href="#">{demo}</a></p>
+      </div>
     </section>
 	-->
 
