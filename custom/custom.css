@@ -14,41 +14,43 @@ Custom  CSS
 }
 .step {
 	background: transparent no-repeat bottom right;
-	padding-bottom: 150px;
+	height: 900px;
+	margin: 0 auto;
 }
 .step ol {
 	width: 70%;
 }
+#step0 {
+  background-image: url(../img/graphics/individual-stairs-0.png);
+}
 #step1 {
-  background-image: url(../img/graphics/individual-stairs-step1.jpg);
+  background-image: url(../img/graphics/individual-stairs-1.png);
 }
 #step2 {
-  background-image: url(../img/graphics/individual-stairs-step2.jpg);
+  background-image: url(../img/graphics/individual-stairs-2.png);
 }
 #step3 {
-  background-image: url(../img/graphics/individual-stairs-step3.jpg);
+  background-image: url(../img/graphics/individual-stairs-3.png);
 }
 #step4 {
-  background-image: url(../img/graphics/individual-stairs-step4.jpg);
+  background-image: url(../img/graphics/individual-stairs-4.png);
 }
 #step5 {
-  background-image: url(../img/graphics/individual-stairs-step5.jpg);
+  background-image: url(../img/graphics/individual-stairs-5.png);
 }
 #step6 {
-  background-image: url(../img/graphics/individual-stairs-step6.jpg);
+  background-image: url(../img/graphics/individual-stairs-6.png);
 }
 #step7 {
-  background-image: url(../img/graphics/individual-stairs-step6.jpg);
-}
+  background-image: url(../img/graphics/individual-stairs-7.png);
+}  
 #step8 {
-  background-image: url(../img/graphics/individual-stairs-step6.jpg);
+  background-image: url(../img/graphics/individual-stairs-8.png);
 }
 #step9 {
-  background-image: url(../img/graphics/individual-stairs-step6.jpg);
+  background-image: url(../img/graphics/individual-stairs-9.png);
 }
-#step10 {
-  background-image: url(../img/graphics/individual-stairs-step6.jpg);
-}
+
 .panel-left {
 	float: left;
 }
