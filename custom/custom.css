@@ -5,7 +5,10 @@ Custom  CSS
 	font-size: 1px;
 	text-indent: -10000em;
 }
-
+.steps-all {
+	width: 1024;
+	height: 900px;	
+}
 #steps-all-comp {
   background: transparent url(../img/graphics/stairs-0-9.png) 0 0 no-repeat;
 }
