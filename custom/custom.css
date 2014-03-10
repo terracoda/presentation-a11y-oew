@@ -1,0 +1,50 @@
+/*
+Custom  CSS
+*/
+.speaker-note {
+	font-size: 1px;
+	text-indent: -10000em;
+}
+.step {
+	background: transparent no-repeat bottom right;
+	padding-bottom: 150px;
+}
+.step ol {
+	width: 70%;
+}
+#step1 {
+  background-image: url(../img/graphics/individual-stairs-step1.jpg);
+}
+#step2 {
+  background-image: url(../img/graphics/individual-stairs-step2.jpg);
+}
+#step3 {
+  background-image: url(../img/graphics/individual-stairs-step3.jpg);
+}
+#step4 {
+  background-image: url(../img/graphics/individual-stairs-step4.jpg);
+}
+#step5 {
+  background-image: url(../img/graphics/individual-stairs-step5.jpg);
+}
+#step6 {
+  background-image: url(../img/graphics/individual-stairs-step6.jpg);
+}
+#step7 {
+  background-image: url(../img/graphics/individual-stairs-step6.jpg);
+}
+#step8 {
+  background-image: url(../img/graphics/individual-stairs-step6.jpg);
+}
+#step9 {
+  background-image: url(../img/graphics/individual-stairs-step6.jpg);
+}
+#step10 {
+  background-image: url(../img/graphics/individual-stairs-step6.jpg);
+}
+.panel-left {
+	float: left;
+}
+.panel-right {
+	float: right;
+}
