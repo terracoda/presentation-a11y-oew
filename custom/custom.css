@@ -1,6 +1,12 @@
 /*
 Custom  CSS
 */
+figcaption {
+	text-align: center;
+}
+small {
+	font-size: 80%;
+}
 .speaker-note {
 	font-size: 1px;
 	text-indent: -10000em;
@@ -13,12 +19,13 @@ Custom  CSS
 	list-style-type: none;
 }
 .steps-all {
-	width: 1600px;
-	height: 900px;	
+	height: 900px;
+	background: transparent url(../img/graphics/stairs-background-faded.png) no-repeat center center;	
+
 }
-#steps-all-comp {
+/*#steps-all-comp {
   background: transparent url(../img/graphics/stairs-background-faded.png) 0 0 no-repeat;
-}
+}*/
 .step {
 	background: transparent no-repeat bottom right;
 	height: 900px;
