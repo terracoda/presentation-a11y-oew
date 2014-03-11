@@ -244,7 +244,10 @@
 	  	 <p>Keep it as simple as possible.</p> 
 	  </li>
     </ol>
-    <p><a href="demos/demo-1-text.html">{demo}</a></p>
+    <ul>
+		<li><a href="demos/demo-1-text.html">{demo simple}</a></li>
+		<li><a href="demos-private/ed-3650/content/demo-1-text.html">{demo heading hierarchy}</a></li>
+	</ul>
     </div>
 </section>
 			
@@ -293,7 +296,10 @@
 		  </ul>
       </li>
     </ol>
-    <p><a href="#">{demo}</a></p>
+    <ul>
+		<li><a href="demos-private/ed-3650/content/demo-3-images.html">{demo image}</a></li>
+    	<li><a href="demos-private/ed-3650/content/demo-3-charts.html">{demo diagram}</a></li>
+	</ul>
   </div> 
 </section>
 
@@ -317,7 +323,7 @@
 	        <p>Use <abbr>CSS</abbr> for layout.</p>
 		</li>
       </ol>
-      <p><a href="#">{demo}</a></p>
+      <p><a href="demos-private/ed-3650/content/demo-4-tables.html">{demo tables}</a></p>
   </div>
 </section>
 
@@ -342,24 +348,29 @@
 	    <p>Using <abbr>CSS</abbr> &amp; <abbr>HTML</abbr> together properly gives you the biggest bang in making your content accessible.</p>
 	  </li>
     </ol>
-	<p><a href="#">{demo}</a></p> 
+	<p><a href="http://www.csszengarden.com/">{demo css zen garden}</a></p> 
    </div>
  </section>
 				
 <section class="slide">
-  <h2>6. Forms are complex by nature</h2>
-    <div class="step" id="step6"><p>Keep things simple. Don&apos;t ask for data you don't need.</p>
+  <h2>6. Forms: complex by nature</h2>
+    <div class="step" id="step6">
+	<p>Keep things simple. Don&apos;t ask for data you don't need.</p>
     <ol>
-		<li>Use &amp; associate a <code>label</code> for every form <code>control</code>.</li>
-    	<li>Group form controls to create clarity: <code>legend</code>, <code>fieldset</code>, <code>optgroup</code>.  <span class="speaker-note">Use the rich set of tags for creating meaning in forms is good for all users.</li>
+		<li><h3>Label all form controls</h3>
+			<p>Associate a <code>label</code> to every form <code>control</code>.</p></li>
+    	<li><h3>Keep form elements organized</h3>
+			<p>Forms have a rich set of tags: <code>legend</code>, <code>fieldset</code>, <code>optgroup</code>. Grouping like controls together creates organization and meaning.</p></li>
     </ol>
-    <p><strong>Note:</strong> Forms &amp; complex data tables have often been the basis for lawsuits.</p>   
+    <p><strong>Note:</strong> Inaccessible forms &amp; complex data tables have been the basis for lawsuits.</p>   
     <ul>
+		<li><a href="http://canlii.org/en/ca/fca/doc/2012/2012fca161/2012fca161.html">Canada v. Jodhan</a> - job application form.</li>
 		<li><a href="https://www.humanrights.gov.au/bruce-lindsay-maguire-v-sydney-organising-committee-olympic-games">Maguire v. Sidney Organizing Committee for the Olympic Games</a> (<abbr>SOCOG</abbr>) - results table.</li>
-    	<li><a href="http://canlii.org/en/ca/fca/doc/2012/2012fca161/2012fca161.html">Canada v. Jodhan</a> - job application form.</li>
+    	
 	</ul>
 	
-	<p><a href="#">{demo}</a></p></div>    
+	<p>{no demo}</p>
+    </div>    
 </section>
 				
 <section class="slide">
@@ -369,7 +380,7 @@
 	  <li>No auto play.</li>
 	  <li><p>Like images, video &amp; audio need text alternatives to be made accessible. This can be achieved through:</p>
           <ul>
-            <li>Accessible Transcripts <a href="#">{demo}</a></li>
+            <li>Accessible Transcripts <a href="demos-private/ed-3650/content/demo-7-video.html">{demo video}</a></li>
             <li>Captions (closed or open)</li>
             <li>Audio description (aka video description)</li>
 			<li>Subtitles for language accessibility</li>
@@ -390,16 +401,18 @@
     <div class="step" id="step8">
 	<p>Interactive web components such games and learning exercises are <strong>more complex</strong>.</p>
     <ol>
-      <li>Follow web standards</li>
-      <li>Graceful degradation</li>
+      <li>Follow web standards.</li>
+      <li>Graceful degradation.</li>
+	  <li>Test.</li>
+	  <li>Providing equivalent alternatives.</li>
     </ol>
    </div>
    <div class="step" id="step9">
 	<h2>9. PDF</h2>
     <ul>
-      <li>Can it be converted?</li>
   	  <li>PDF has its own standard.</li>
-      <li>Must be tagged to accessible.</li>
+      <li>Must be tagged to be accessible.</li>
+	   <li>Can it be converted? Is it feasile?</li>
     </ul>    
    </div>
  </section>
