@@ -119,7 +119,7 @@
 <section class="slide">
 <h2>In the digital realm, change is constant</h2>
   <h3>The web is a diverse place</h3>
-    <p>Users employ a diverse range of technological devices, including assistive technologies, to access web content.</p>
+    <p>Users employ a diverse range of technological devices, including <strong>assistive &amp; adaptive technologies</strong>, to access web content.</p>
 
     <figure style="display: inline-block; padding: 2% 1%;">
 		<img src="img/at-refreshable-braille.jpg" alt="">
@@ -162,7 +162,8 @@
 </section>
 
 <section class="slide">
-  <h2>Web Accessibility</h2> 
+  <h2>Web Accessibility</h2>
+  <p>&nbsp;</p> 
   <div class="steps-all">
     <blockquote style="width: 40%; border-left: none;">
      <p><strong>Web Accessibility</strong> is the inclusive practice of making websites usable by people of all abilities and disabilities.</p>
@@ -179,11 +180,11 @@
 
 <section class="slide">
   <h2>Let's get a move on</h2>
-    <figure style="float: left; padding-right: 10%;">
+    <figure style="float: left; width: 40%;">
       <img src="img/icon-accessible-icon-project.png" alt="New Sign for International Access. A more active image.">
       <figcaption style="text-align: center;">Sara Hendren, 2011. The Accessible Icon Project.</figcaption>
     </figure>
-        <blockquote style="border-left: none;">
+        <blockquote style="border-left: none; padding-left: 50%">
 			<ol>
               <li class="slide">Perceivable</li>
               <li class="slide">Operable</li>
@@ -195,36 +196,37 @@
 </section>
 <!-- Steps/Ramp Explanations start here. -->   	   
 <section class="slide">
-  <h2>0. A solid base: good code</h2>
+  <h2>0. A solid base</h2>
   <div class="step"id="step0">
-	<p>Three essential things are needed for a solid (valid) code base.</p>
+	<p>Three essential things are needed for a <strong>solid (valid) code base</strong>.</p>
     <ol>
-      <li>
+      <li class="slide">
       	<h3>Document Type</h3>
 		  <p><code>&lt;!DOCTYPE html&gt;</code></p>
-      	  <p class="speaker-note">The <em>doctype</em> tells the validator &amp; the browser what version of <abbr>HTML</abbr> the site is coded in.</p>
+      	  <p>The <em>doctype</em> is your website's building code. Use a strict doctype and validate your pages.</p>
       </li>
-      <li>
+      <li class="slide">
       	<h3>A Page Title</h3>
-		  <p><code>&lt;title&gt;Unique Page Title Goes Here&lt;/title&gt;</code></p>
-      	  <p class="speaker-note">A unique and meaningful page title tells users where they are. The title element is required.</p>
+		  <p><code>&lt;title&gt;A Unique Page Title&lt;/title&gt;</code></p>
+      	  <p>A unique <em>title</em> clearly tells the user where he/she is. </p>
       </li>
-      <li>
+      <li class="slide">
       	<h3>Character Encoding</h3>
 		  <p><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></p>
-      	  <p class="speaker-note">If you have ever seen a web page with funny little symbols instead of letters and punctuation, it was likely having an encoding problem.</p>
+      	  <p>Ever see funny little symbols instead of letters and punctuation? <span class="speaker-note">It was likely having an encoding problem.</p>
       </li>
     </ol>
-    <p><a href="#">{demo}</a></p>
+    <p><a href="demos/demo-0-base.html">{demo}</a></p>
  </div>
  </section>
 			
 <section class="slide">
   <h2>1. Text: accessible by nature</h2>
+  <p>To ensure text is accessible to all users:</p>
     <div class="step"id="step1">		
     <ol>
       <li class="slide">
-	    <h3>Declare the language</h3>
+	    <h3>Declare the human language</h3>
 		  <p class="speaker-note">The browser needs to know what language the content is written in, and it needs to made aware of language changes.</p>
 		  <p><code>&lt;html lang=&quot;en&quot;&gt;</code></p>
 		  <p><code>&lt;q lang=&quot;fr&quot;&gt;Bonjour!&lt;/q&gt;</code></p>
@@ -242,7 +244,7 @@
 	  	 <p>Keep it as simple as possible.</p> 
 	  </li>
     </ol>
-    <p><a href="#">{demo}</a></p>
+    <p><a href="demos/demo-1-text.html">{demo}</a></p>
     </div>
 </section>
 			
