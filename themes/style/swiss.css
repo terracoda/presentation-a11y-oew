@@ -144,7 +144,7 @@ a {
 
 /* End HTML5 Boilerplate adaptations */
 h1 {
-  font-size: 4.5em; }
+  font-size: 3em; }
 
 h1, .vcenter {
   font-weight: bold;
@@ -166,7 +166,7 @@ h1, .vcenter {
 .vcenter h1 {
   position: relative;
   top: auto;
-  padding: 0;
+  padding: 1em 0 0 0;
   -webkit-transform: none;
   -moz-transform: none;
   -ms-transform: none;
@@ -174,30 +174,26 @@ h1, .vcenter {
   transform: none; }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 3.00em;
   font-weight: bold;
   padding-top: .5em;
   margin: 0 0 .66666em 0;
   border-bottom: 3px solid #888; }
 
 h3 {
-  font-size: 1.4375em;
+  font-size: 2.25em;
   font-weight: bold;
   margin-bottom: .30435em; }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1.75em;
   font-weight: bold;
   margin-bottom: .25em; }
 
-h5 {
-  font-size: 1.125em;
+h5, h6 {
+  font-size: 1.5em;
   font-weight: bold;
   margin-bottom: .2222em; }
-
-h6 {
-  font-size: 1em;
-  font-weight: bold; }
 
 img, iframe, video {
   display: block;
@@ -227,7 +223,7 @@ li {
     margin-bottom: inherit; }
 
 .deck-container {
-  font-size: 16px;
+  font-size: 32px;
   line-height: 1.25;
   color: #444; }
 
